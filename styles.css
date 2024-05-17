@@ -533,5 +533,52 @@
 
 
     /* Link Interno Âncora */
+    
+    .anchor-link {
+      display: block;
+      text-align: center;
+      color: #9c219c;
+      text-decoration: none;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .anchor-link:hover {
+      color: #63204982;
+    }
 
     /* Fim do Link Interno Âncora */
+
+
+    /* Footer */
+    
+        
+    .footer {
+      background: linear-gradient(to right, #ff00cc, #3333ff);
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    .footer .social {
+      margin-top: 10px;
+    }
+
+    .footer .social a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #fff;
+      font-size: 20px;
+    }
+
+
+
+    /* Responsividade do Footer */
+
+    /* Fim do Footer */
