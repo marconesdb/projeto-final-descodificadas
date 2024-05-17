@@ -407,21 +407,21 @@
 
   /* Estilos para tornar a iframe responsiva */
     iframe {
-        margin-bottom: 350px;
+        margin-bottom: 0px;
         max-width: 100%;
         max-height: 100%;
-        margin-top: 50px;
+        margin-top: -470px;
     }
 
     /* Responsividade Vídeo - Youtube */
     @media screen and (max-width: 540px) {
         .section2{
-
+     
         }
 
         iframe{
         width: 475px;
-        margin-top: -120px;
+       
         }
       }
 
