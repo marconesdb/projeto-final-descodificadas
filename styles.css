@@ -305,4 +305,128 @@
         color: #fff;
     }
 
+
+    /* Responsividade dos Cards */
+    @media screen and (max-width: 540px) {
+        .container2{
+          width: 100%;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+    
+        .card {
+          width: 550px;
+          margin-bottom: 20px;
+        }
+    
+        #Delicious{
+          height: 350px;
+          margin-bottom: -30px;
+        }
+    
+        #img1, #img2, #img3 {
+          width: 460px;
+          padding: 10px;
+         
+        }
+       
+      }
+    /* Fim da Resposnsividade dos Cards */
     /* Fim de Cards */
+
+
+    /* Carousel */
+    
+    .carousel {
+        position: relative;
+        margin: 0 auto;
+        width: 90%; /* Ajuste a largura conforme necessário */
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+    }
+    
+    .carousel-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .carousel-button.prev {
+        left: 10px;
+    }
+    
+    .carousel-button.next {
+        right: 10px;
+    }
+    
+    .carousel-images {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        height: 400px;
+    }
+    
+    .carousel-item {
+        min-width: 100%;
+        object-fit: cover;
+    }
+    
+    .container {
+        text-align: center;
+    }
+    
+    /* Responsividade  Carousel */
+    @media screen and (max-width: 540px) {
+        .carousel {
+          width: 88%;
+          margin: 0, 10px, 0, 10px;
+          margin-top: -45px;
+        }
+      }
+
+    /* Fim do Carousel */
+
+
+    /* Vídeo - Youtube */
+    
+   /* Estilos para centralizar a iframe */
+   .section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Definir altura da seção para ocupar toda a altura da tela */
+    margin: 0px, 10px 0px, 10px;
+  }
+
+  /* Estilos para tornar a iframe responsiva */
+    iframe {
+        margin-bottom: 350px;
+        max-width: 100%;
+        max-height: 100%;
+        margin-top: 50px;
+    }
+
+    /* Responsividade Vídeo - Youtube */
+    @media screen and (max-width: 540px) {
+        .section2{
+
+        }
+
+        iframe{
+        width: 475px;
+        margin-top: -120px;
+        }
+      }
+
+
+
+    /* Fim do Vídeo - Youtube */
+
+
