@@ -415,10 +415,7 @@
 
     /* Responsividade Vídeo - Youtube */
     @media screen and (max-width: 540px) {
-        .section2{
-     
-        }
-
+        
         iframe{
         width: 475px;
        
@@ -429,4 +426,38 @@
 
     /* Fim do Vídeo - Youtube */
 
+    /* Iframe -Localização */
+    .container3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Altura total da tela */
+      margin-top: -750px;
+    }
+  
+    .iframe-wrapper {
+      max-width: 95%; /* Define a largura máxima do iframe */
+      max-height: 90%; /* Define a altura máxima do iframe */
+    }
 
+    #localizacao{
+      margin-bottom: 350px;
+      text-align: center;
+    }
+
+
+    /* Responsividade Vídeo - Youtube */
+    @media screen and (max-width: 540px) {
+        
+      #localizacao{
+      margin-bottom: 350px;
+      }
+
+      .container3{
+      margin-top: -670px;
+      }
+    }
+
+    /* Fim do Iframe Localização */
+
+    
