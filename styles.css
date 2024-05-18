@@ -420,7 +420,7 @@
         }
 
         #video{
-        margin-top: -40px;  
+        margin-top: 0px;  
         }
 
       }
@@ -531,7 +531,11 @@
      /*Responsividade do Formulário de Contato */
       
      @media screen and (max-width: 540px) {
-        
+      
+      .form{
+        margin-top: -370px;
+          
+        }
       .container4{
       margin-top: 20px;
       margin-left: 35px;
