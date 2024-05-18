@@ -399,36 +399,100 @@
 
     /* Vídeo - Youtube */
     
-   /* Estilos para centralizar a iframe */
-   .section2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Definir altura da seção para ocupar toda a altura da tela */
-    margin: 0px, 10px 0px, 10px;
+   /* Iframe - Localização */
+.container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura total da tela */
+  margin-top: -270px;
+}
+
+.iframe-wrapper {
+  width: 100%;
+  max-width: 490px; /* Define a largura máxima do iframe */
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #ff00cc, #3333ff);
+  border-radius: 8px;
+}
+
+.responsive-iframe {
+  width: 100%;
+  height: 315px;
+  border: 0;
+  border-radius: 8px;
+}
+
+#localizacao {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Responsividade Iframe - Localização */
+@media screen and (max-width: 540px) {
+  .container3 {
+    margin-top: -150px;
+    height: auto;
+    padding: 10px;
   }
 
-    /* Responsividade Vídeo - Youtube */
-    @media screen and (max-width: 540px) {
-        
-        iframe{
-        width: 475px;
-        }
+  .iframe-wrapper {
+    margin: 0 auto; /* Centraliza o iframe horizontalmente */
+    padding: 10px; /* Ajusta o padding para telas menores */
+    width: 100%; /* Garante que o iframe ocupe toda a largura disponível */
+    max-width: 100%; /* Remove a largura máxima */
+    background: linear-gradient(to right, #ff00cc, #3333ff);
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
 
-        .section2{
-         margin-top: -40px; 
-        }
+  .responsive-iframe {
+    height: 200px; /* Ajusta a altura do iframe para telas menores */
+    width: 100%; /* Garante que o iframe ocupe toda a largura disponível */
+    box-sizing: border-box;
+  }
+}
 
-        #video{
-        margin-top: 0px;  
-        }
+/* Vídeo - Youtube */
+/* Estilos para centralizar a iframe */
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Definir altura da seção para ocupar toda a altura da tela */
+  margin: 0;
+}
 
-      }
+#video {
+  width: 100%;
+  max-width: 490px;
+  height: 315px;
+  background: linear-gradient(to right, #ff00cc, #3333ff);
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-      @media screen and (max-width: 1024px) { /* Media query para telas de notebook */
-        #video {
-       }
-     }
+/* Responsividade Vídeo - Youtube */
+@media screen and (max-width: 540px) {
+  .section2 {
+    height: auto;
+    padding: 10px;
+    margin-top: 160px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #video {
+    width: 93%;
+    height: 278px; /* Ajusta a altura do iframe para telas menores */
+    padding: 10px;
+    box-sizing: border-box;
+    
+  }
+}
+
 
     /* Fim do Vídeo - Youtube */
 
@@ -467,7 +531,7 @@
 /* Responsividade Iframe - Localização */
 @media screen and (max-width: 540px) {
   .container3 {
-    margin-top: -150px;
+    margin-top: 20px;
     height: auto;
     padding: 10px;
   }
