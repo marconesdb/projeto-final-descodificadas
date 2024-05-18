@@ -505,6 +505,7 @@
   margin-top: -270px;
   margin-left: 20px;
   margin-right: 20px;
+ 
 }
 
 .iframe-wrapper {
@@ -560,7 +561,7 @@
     /* Formulário de Contato */
         
     .form{
-      margin-top: -210px;
+      margin-top: -50px;
     }
     .container4 {
       max-width: 600px;
