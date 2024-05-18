@@ -413,7 +413,14 @@
         
         iframe{
         width: 475px;
-       
+        }
+
+        .section2{
+         margin-top: -40px; 
+        }
+
+        #video{
+        margin-top: -40px;  
         }
 
       }
