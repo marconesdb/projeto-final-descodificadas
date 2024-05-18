@@ -310,6 +310,7 @@
       .container2 {
         flex-direction: column; /* Muda a direção do flex para coluna */
         align-items: center; /* Centraliza os cards verticalmente */
+        margin-top: -30px;
       }
 
       .card {
