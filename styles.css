@@ -293,7 +293,7 @@
       text-decoration: none;
       transition: background-color 0.3s ease;
       margin-top: 10px; /* Ajusta a margem superior do botão */
-      margin-left: 25%;
+      margin: 22%;
     }
 
     .button:hover {
