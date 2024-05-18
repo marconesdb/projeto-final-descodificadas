@@ -344,6 +344,7 @@
         overflow: hidden;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: -130px;
         
     }
     
@@ -388,9 +389,11 @@
           width: 88%;
           margin: 0, 10px, 0, 10px;
           margin-top: -45px;
+          margin-bottom: -130px;
         }
       }
 
+    
     /* Fim do Carousel */
 
 
@@ -405,14 +408,6 @@
     margin: 0px, 10px 0px, 10px;
   }
 
-  /* Estilos para tornar a iframe responsiva */
-    iframe {
-        margin-bottom: 0px;
-        max-width: 100%;
-        max-height: 100%;
-        margin-top: -470px;
-    }
-
     /* Responsividade Vídeo - Youtube */
     @media screen and (max-width: 540px) {
         
@@ -420,9 +415,13 @@
         width: 475px;
        
         }
+
       }
 
-
+      @media screen and (max-width: 1024px) { /* Media query para telas de notebook */
+        #video {
+       }
+     }
 
     /* Fim do Vídeo - Youtube */
 
@@ -432,7 +431,7 @@
       justify-content: center;
       align-items: center;
       height: 100vh; /* Altura total da tela */
-      margin-top: -750px;
+      margin-top: -350px;
     }
   
     .iframe-wrapper {
@@ -441,7 +440,7 @@
     }
 
     #localizacao{
-      margin-bottom: 350px;
+    
       text-align: center;
     }
 
@@ -450,11 +449,15 @@
     @media screen and (max-width: 540px) {
         
       #localizacao{
-      margin-bottom: 350px;
+      margin-bottom: 20px;
       }
 
       .container3{
-      margin-top: -670px;
+      margin-top: 0px;
+      }
+
+      .iframe-wrapper{
+        margin-top: -520px;
       }
     }
 
