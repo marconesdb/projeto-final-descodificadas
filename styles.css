@@ -408,20 +408,6 @@
         }
       }
       
-      @media (max-width: 768px) {
-        .carousel-images img {
-          /* Alterando as imagens para versões específicas para telas menores */
-          content: url('img/Banner-1-small.png');
-        }
-      
-        .carousel-images img:nth-child(2) {
-          content: url('img/Banner-2-small.png');
-        }
-      
-        .carousel-images img:nth-child(3) {
-          content: url('img/Banner-3-small.png');
-        }
-      }
       
     
     /* Fim do Carousel */
