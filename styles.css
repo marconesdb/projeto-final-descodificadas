@@ -13,7 +13,7 @@
   }
   
   /* Navbar */
-
+ 
   .top-nav {
     display: flex;
     flex-direction: row;
@@ -25,7 +25,7 @@
     height: 100px;
     padding: 1em;
   }
-  
+
   .menu {
     display: flex;
     flex-direction: row;
@@ -33,126 +33,124 @@
     margin: 0;
     padding: 0;
   }
-  
+
   .menu > li {
     margin: 0 1rem;
     overflow: hidden;
   }
-  
+
   .menu-button-container {
     display: none;
-    height: 100%;
-    width: 30px;
     cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
   }
-  
+
   #menu-toggle {
     display: none;
   }
-  
+
   .menu-button,
   .menu-button::before,
   .menu-button::after {
     display: block;
     background-color: #fff;
-    position: absolute;
+    position: relative;
     height: 4px;
     width: 30px;
     transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
     border-radius: 2px;
   }
-  
-  .menu-button::before {
-    content: '';
-    margin-top: -8px;
-  }
-  
+
+  .menu-button::before,
   .menu-button::after {
     content: '';
-    margin-top: 8px;
+    position: absolute;
+    left: 0;
   }
-  
+
+  .menu-button::before {
+    top: -10px;
+  }
+
+  .menu-button::after {
+    top: 10px;
+  }
+
   #menu-toggle:checked + .menu-button-container .menu-button::before {
-    margin-top: 0px;
-    transform: rotate(405deg);
+    transform: rotate(405deg) translate(5px, -5px);
   }
-  
+
   #menu-toggle:checked + .menu-button-container .menu-button {
     background: rgba(176, 15, 15, 0);
   }
-  
+
   #menu-toggle:checked + .menu-button-container .menu-button::after {
-    margin-top: 0px;
-    transform: rotate(-405deg);
+    transform: rotate(-405deg) translate(5px, 5px);
   }
 
-  .imgPrincipal{
-    width: 80px; 
-    height: 50px; 
+  .imgPrincipal {
+    width: 80px;
+    height: 50px;
     border-radius: 5px;
   }
-   /* Fim da Navbar */
 
-
-
-   /* Responsividade da Navbar */
-
+  /* Responsividade da Navbar */
   @media (max-width: 700px) {
     .menu-button-container {
-      display: flex;
+        display: flex;
+        height: 30px;
+        width: 40px;
+        align-items: center;
+        justify-content: center;
     }
+
     .menu {
-      position: absolute;
-      top: 0;
-      margin-top: 50px;
-      left: 0;
-      flex-direction: column;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: none;
     }
+
+    #menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+
     #menu-toggle ~ .menu li {
-      height: 0;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-      background-color: #ff00cc;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        background-color: #ff00cc;
     }
-    
-    #menu-toggle ~ .menu li:first-child {
-      margin-top: 50px;
-    }
+
     #menu-toggle:checked ~ .menu li {
-      border: 1px solid #333;
-      height: 2.5em;
-      padding: 0.5em;
-      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        border: 1px solid #333;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
+
+
     .menu > li {
-    
-      display: flex;
-      justify-content: center;
-      margin: 10px 0px 0px 0px;
-      padding: 0.5em 0;
-      width: 100%;
-      color: white;
-      background: linear-gradient(to right, #ff00cc, #3333ff);
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 0 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background: linear-gradient(to right, #ff00cc, #3333ff);
     }
+
     .menu > li:not(:last-child) {
-      border-bottom: 1px solid #444;
+        border-bottom: 1px solid #444;
     }
-    }
-
+  }
     
-   /* Fim da Responsividade da Navbar */
-
-
-  
+  /* Fim da Responsividade da Navbar */
 
      a{
         text-decoration: none;
