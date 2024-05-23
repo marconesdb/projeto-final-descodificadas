@@ -391,9 +391,10 @@
           margin-top: -38px;
           margin-bottom: -130px;
         }
+        
       }
-
-      @media (max-width: 540px) {
+      
+      @media (max-width: 768px) {
         .carousel-images img {
           /* Alterando as imagens para versões específicas para telas menores */
           content: url('img/Banner-1-small.png');
