@@ -314,7 +314,7 @@
   }
 
   .card {
-    width: 90%; /* Ajusta a largura dos cards para 90% da tela */
+    width: 100%; /* Ajusta a largura dos cards para 90% da tela */
     margin: 10px auto; /* Centraliza os cards na tela e adiciona margem entre eles */
   }
 
