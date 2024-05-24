@@ -311,7 +311,7 @@
       .container2 {
         flex-direction: column; /* Muda a direção do flex para coluna */
         align-items: center; /* Centraliza os cards verticalmente */
-        margin-top: 0; /* Removido para evitar ajuste de margem negativa */
+        margin-top: -30px; /* Removido para evitar ajuste de margem negativa */
       }
 
       .card {
