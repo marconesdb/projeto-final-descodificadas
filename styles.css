@@ -318,6 +318,7 @@
       .card {
         width: 80%; /* Ajusta a largura dos cards para 80% da tela */
         margin: 10px auto; /* Centraliza os cards horizontalmente e adiciona margem entre eles */
+        text-align: center; /* Centraliza o conteúdo do card */
       }
 
       .card img {
