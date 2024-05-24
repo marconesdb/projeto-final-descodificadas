@@ -686,6 +686,19 @@
       }
     }
 
+
+    @media screen and (max-width: 700px) {
+      .form {
+          margin-top: 20px;
+      }
+      .container4 {
+          margin-top: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          width: 90%; /* Ajuste a largura conforme necessário */
+      }
+  }
+  
     /* Fim do Formulário de Contato */
 
 
