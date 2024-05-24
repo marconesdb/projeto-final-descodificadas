@@ -329,6 +329,10 @@
         margin-top: 10px; /* Ajusta a margem superior do botão */
         margin: 0 auto; /* Centraliza o botão horizontalmente dentro do card */
       }
+      
+      #img1, #img2, #img3 {
+        width: 100%;
+      }
     }
 
     /* Fim da Responsividade dos Cards */
