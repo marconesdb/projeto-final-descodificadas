@@ -304,7 +304,7 @@
     }
 
     /* Responsividade dos Cards */
-    @media (min-width: 540px) and (max-width: 768px) {
+    @media (min-width: 400px) and (max-width: 768px) {
       .container2 {
         flex-direction: column; /* Muda a direção do flex para coluna */
         align-items: center; /* Centraliza os cards verticalmente */
