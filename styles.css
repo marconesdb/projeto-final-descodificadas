@@ -304,34 +304,17 @@
     }
 
     /* Responsividade dos Cards */
-    /* Responsividade dos Cards */
-@media (min-width: 540px) and (max-width: 768px) {
-  .container2 {
-    flex-direction: column; /* Muda a direção do flex para coluna */
-    align-items: center; /* Centraliza os cards verticalmente */
-    margin-top: 0; /* Removido para evitar ajuste de margem negativa */
-    width: 100%;
-    max-width: 92%; /* Limita a largura máxima dos cards */
+    @media (max-width: 768px) {
+      .card {
+          width: calc(50% - 20px);
+      }
   }
-
-  .card {
-    width: 100%; /* Ajusta a largura dos cards para ocupar toda a largura disponível */
-    margin: 10px auto; /* Centraliza os cards horizontalmente e adiciona margem entre eles */
-    text-align: center; /* Centraliza o conteúdo do card */
+  
+  @media (max-width: 540px) {
+      .card {
+          width: calc(100% - 20px);
+      }
   }
-
-  .card img {
-    width: 100%; /* Ajusta a largura da imagem para preencher o card */
-    height: auto; /* Mantém a proporção da imagem */
-  }
-
-  .button {
-    margin-top: 10px; /* Ajusta a margem superior do botão */
-    display: block; /* Garante que o botão ocupe toda a largura disponível */
-    width: 100%; /* Define a largura do botão como 100% do card */
-  }
-}
-
    /* Responsividade dos Cards */
   
     @media (min-width: 540px) and (max-width: 768px) {
