@@ -326,6 +326,29 @@
         margin: 10px 0 0 0; /* Ajusta a margem do botão */
       }
     }
+
+    @media (max-width: 700px) {
+      .container2 {
+        flex-direction: column; /* Muda a direção do flex para coluna */
+        align-items: center; /* Centraliza os cards verticalmente */
+        margin-top: -30px;
+      }
+
+      .card {
+        width: 100%; /* Ajusta a largura dos cards para 100% */
+        margin: 10px 0; /* Ajusta a margem para separar os cards verticalmente */
+      }
+
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza o conteúdo do card, incluindo o botão */
+      }
+
+      .button {
+        margin: 10px 0 0 0; /* Ajusta a margem do botão */
+      }
+    }
 /* Fim da Responsividade dos Cards */
 
 
