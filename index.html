@@ -11,19 +11,17 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    
-    <nav class="top-nav">
+     <!-- Navbar -->
+     <nav class="top-nav">
       <div>
         <img class="imgPrincipal" src="./img/Captura de Tela (4239).png" alt="" >
       </div>
       <input id="menu-toggle" type="checkbox" />
-      <label class='menu-button-container' for="menu-toggle">
-      <div class='menu-button'></div>
-    </label>
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
       <ul class="menu">
         <li><a href="#home">Início</a></li>
-       
         <li class="submenu">
           <a href="#sobre">Sobre</a>
           <div class="dropdown">
@@ -32,15 +30,15 @@
             <a href="#valores">Valores</a>
           </div>
         </li>
-           
         <li><a href="#gallery">Galeria</a></li>
         <li><a href="#contact">Contato</a></li>
+        <li>
+          <a href="#cart" class="cart-container" onmouseover="showCartMessage()">
+            🛒 <span id="cartCounter" class="cart-counter">0</span>
+        </a>
+        </li>
       </ul>
     </nav>
-   
-    
-
-
     <!-- Fim da Navbar -->
 
 
