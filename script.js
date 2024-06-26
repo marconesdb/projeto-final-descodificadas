@@ -10,9 +10,9 @@ document.getElementById("botaoComprar").addEventListener("click", function() {
     cartCounter.textContent = itemCount;
 
     // Mostrar o contador se estiver oculto
-    if (itemCount > 0) {
-        cartCounter.style.display = "inline";
-    }
+    // if (itemCount > 0) {
+    //     cartCounter.style.display = "inline";
+    // }
 });
 
 document.getElementById("closeAlertButton").addEventListener("click", function() {

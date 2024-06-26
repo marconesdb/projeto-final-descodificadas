@@ -35,10 +35,12 @@
     
   }
 
-  .menu > li {
+  .menu > li{
     margin: 0 1rem;
     overflow: hidden;
+    
   }
+
 
   .menu-button-container {
     display: none;
@@ -112,8 +114,7 @@
         width: 100%;
         justify-content: center;
         align-items: center;
-        display: none;
-        
+        display: none;   
     }
 
     #menu-toggle:checked ~ .menu {
@@ -409,6 +410,12 @@
   display: inline-block; 
   margin-top: 15px;
 }
+
+#cart{
+  padding: 7px 0 0 0 !important; 
+  height: 50px !important;
+}
+
 
 /* Fim dos estilos para o indicador de contagem */
 
